@@ -19,7 +19,7 @@ noteAppStore.subscribe(() =>
   console.log("[ noteAppStore ] State: ", noteAppStore.getState())
 );
 
-console.log(`[ index ] Store: ${noteAppStore.getState()}`)
+console.log(`[ index ] Store: ${JSON.stringify(noteAppStore.getState())}`)
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

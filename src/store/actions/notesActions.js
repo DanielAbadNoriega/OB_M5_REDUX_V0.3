@@ -32,11 +32,11 @@ export const toggleNote = (id) => {
   };
 };
 
-export const filterNote = (id) => {
+export const filterNote = (filter) => {
   return {
     type: FILTER_NOTE,
     payload: {
-      id,
+      filter,
     },
   };
 };
